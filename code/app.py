@@ -1,4 +1,4 @@
-from tkinter import Button, Entry, Label, Tk, messagebox, font, StringVar
+from tkinter import Button, Entry, Label, Tk, messagebox, font,StringVar
 from controller import xor_check, check_errors
 import constant as const
 import matplotlib.pyplot as plt
