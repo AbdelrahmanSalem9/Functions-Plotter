@@ -47,6 +47,7 @@ plot all valid pre-defined functions in the constant.py file for test check
 # Run
 to run the app
 - python app.py
+
 to see the the test functions
 - python test.py
  
