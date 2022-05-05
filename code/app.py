@@ -1,10 +1,5 @@
-import tkinter
-from tkinter import Button, Entry, Label, Tk
-import tkinter
-from tkinter import messagebox
-from tkinter import font
-from controller import xor_check
-from controller import check_errors
+from tkinter import Button, Entry, Label, Tk, messagebox, font, StringVar
+from controller import xor_check, check_errors
 import constant as const
 import matplotlib.pyplot as plt
 import numpy as np
@@ -63,9 +58,9 @@ def launch_app(test_fun=None, test_min=None, test_max=None):
                   font=(const.FONT_TYPE, 18))
 
     # input user variables
-    expr = tkinter.StringVar()
-    min_input = tkinter.StringVar()
-    max_input = tkinter.StringVar()
+    expr = StringVar()
+    min_input = StringVar()
+    max_input = StringVar()
 
     # UI components creating
     function_entry = Entry(main, textvariable=expr, font=(const.FONT_TYPE, 15))
