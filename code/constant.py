@@ -31,4 +31,17 @@ TEST_FUNCTIONS = [
         "x_min": "-1",
         "x_max": "10"
 
-    }]
+    },
+    {
+        "function": "2*x^2 -3*x + 5",
+        "x_min": "3",
+        "x_max": "8"
+
+    },
+    {
+        "function": "x + 2",
+        "x_min": "-2",
+        "x_max": "3"
+
+    },    
+    ]
