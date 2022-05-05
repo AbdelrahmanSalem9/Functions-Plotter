@@ -1,6 +1,7 @@
 def check_errors(expr, x_min, x_max):
-    if "^" in expr:
-        expr = expr.replace("^", "*")
+
+    if expr == "":
+        return "Please Enter the function expression"
     try:
         x = 0
         fx = eval(expr)
