@@ -41,7 +41,7 @@ plot all valid pre-defined functions in the constant.py file for test check
  - pip install tk
 
 # Notes
-- The input function should be defined in continous range eg 1/x can't be defined with 0
+- The input function should be defined in continous range eg 1/x can't be defined with 0 or log2(x) with 0
 - All snips of the program and test functions included in the img folder, I tried to test all possible functions randomly but due to eval function maybe unexpected happens with test some functions 
 
 # Run
