@@ -43,5 +43,47 @@ TEST_FUNCTIONS = [
         "x_min": "-2",
         "x_max": "3"
 
+    },
+    {
+        "function": "e ** x",
+        "x_min": "-8",
+        "x_max": "10"
+
+    },
+    {
+        "function": "sin(2*x)",
+        "x_min": "-10",
+        "x_max": "10"
+
+    },
+    {
+        "function": "sin(x) + e**-x",
+        "x_min": "-20",
+        "x_max": "20"
+
+    },
+    {
+        "function": "cos(x) + sin(3*x +10) - 3*x^3",
+        "x_min": "-1",
+        "x_max": "20"
+
+    },
+        {
+        "function": "log2(4*x) - 3*x",
+        "x_min": "5",
+        "x_max": "15"
+
+    },
+        {
+        "function": "log10(2**x)",
+        "x_min": "5",
+        "x_max": "20"
+
+    },
+        {
+        "function": "cos(x) + log2(x) + 3*x^2 +2*x -1",
+        "x_min": "-1",
+        "x_max": "20"
+
     },    
     ]

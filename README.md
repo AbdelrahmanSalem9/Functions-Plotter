@@ -6,7 +6,7 @@ Implements simple GUI program to plot user-entered function in specific plot ran
 ## Description
 Python code for reading input function from the user in simple gui window then try to parse the input for the plotting function 
 that isbased on eval built-in function of python thats basically try to generate continuous values for the domain and plot it on another window
-mainly the eval function works with single variable polynomial functions and doesn't support trignometric or logarithmic functions
+mainly the eval function works with single variable polynomial, trignometric functions from {sin,cos,tan} and logarithmic function with base 2 and 10 only
 
 ## Error check
 the program support some invalid and missing user inputs like:
@@ -41,8 +41,8 @@ plot all valid pre-defined functions in the constant.py file for test check
  - pip install tk
 
 # Notes
-- As the program works for polynomial functions the ranges must be continous also
-- All snips of the program and test functions included in the img folder
+- The input function should be defined in continous range eg 1/x can't be defined with 0
+- All snips of the program and test functions included in the img folder, I tried to test all possible functions randomly but due to eval function maybe unexpected happens with test some functions 
 
 # Run
 to run the app

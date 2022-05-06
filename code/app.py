@@ -1,17 +1,15 @@
 from tkinter import Button, Entry, Label, Tk, messagebox, font,StringVar
-from controller import xor_check, check_errors
+from controller import xor_check, check_errors,evaluation
 import constant as const
 import matplotlib.pyplot as plt
-import numpy as np
 
 
 def plot(expr, x_min, x_max):
 
-    x = np.linspace(int(x_min), int(x_max), const.SAMPLING_FREQ)
     fig = plt.figure(figsize=(8, 5))
 
     # evaluate f(x) and plot it
-    y = eval(expr)
+    x,y = evaluation(expr,x_min,x_max)
     plt.plot(x, y)
 
     # Show the plot
@@ -36,10 +34,10 @@ def proceed(expr, x_min, x_max):
     4- Invalid Ranges for Min and Max inputs, (min > max)
 
     """
+    # check for "^" operator and replace by "**" as python convention
+    expr = xor_check(expr)
     err = check_errors(expr, x_min, x_max)
     if not err:
-        # check for "^" operator and replace by "**" as python convention
-        expr = xor_check(expr)
         plot(expr, x_min, x_max)
     else:
         error_box(err)
