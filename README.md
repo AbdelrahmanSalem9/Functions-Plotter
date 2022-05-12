@@ -1,4 +1,4 @@
-# Function Plotter Program
+<h1 align="center" id="title">Function Plotter Program</h1>
 
 ## Objective
 Implements simple GUI program to plot user-entered function in specific plot range
@@ -17,11 +17,12 @@ the program support some invalid and missing user inputs like:
 addionlly the program support for both {**,^} exponent operators
 
 # Files
-the program consists of mainly four files
+the program consists of mainly 3 files for logic, GUI and 2 files for testing
 - app.py
 - controller.py
 - constant.py
 - test.py
+- testing_functions.py
 
 ### 1-app.py
 contains all the GUI components and user input parsing to the controller.py file that contain the input proccessing of error and may be extended for more features later additionally contain the plotting function
@@ -35,6 +36,9 @@ contains all pre-defined variables from titles, font size, etc.
 ### 4-test.py
 plot all valid pre-defined functions in the constant.py file for test check
 
+### 5-testing.py
+contains all the my pre-defined mathematical functions expressions stored in a python dictionary to run the plotting function 
+
 # App Dependencies
  - pip install numpy
  - pip install matplotlib
@@ -43,6 +47,7 @@ plot all valid pre-defined functions in the constant.py file for test check
 # Notes
 - The input function should be defined in continous range eg 1/x can't be defined with 0 or log2(x) with 0
 - All snips of the program and test functions included in the img folder, I tried to test all possible functions randomly but due to eval function maybe unexpected happens with test some functions 
+- runtime warrning may be aries when you use log function due to the floating point computation
 
 # Run
 to run the app
